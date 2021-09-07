@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нэвтрэх хуудас</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+       
+    </style>
+</head>
+<body>    
+    <main class="w-full shadow-2xl bg-gray-200 h-screen py-4">
+        <div class="container flex flex-col items-center justify-center mx-auto text-sm">
+            <form class="w-3/5 lg:w-1/5 mb-2">
+                <label class="font-bold text-sm" for="fullname">Овог нэр</label>
+                <input class="border focus:outline-none my-2 w-full border-gray-400 rounded-xl py-1 px-3" type="text" id="fullname" placeholder="Овог нэр" />
+
+                <label class="font-bold text-sm" for="email">Email</label>
+                <input class="border focus:outline-none my-2 w-full border-gray-400 rounded-xl py-1 px-3" type="email" id="email" placeholder="Email" />
+
+                <label class="font-bold text-sm" for="number">Утасны дугаар</label>
+                <input class="border focus:outline-none my-2  w-full border-gray-400 rounded-xl py-1 px-3" type="number" id="number" placeholder="Утасны дугаар" />
+
+                <label class="font-bold text-sm" for="avatar">Профайл зураг</label>
+                <input class="border focus:outline-none my-2  w-full border-gray-400 rounded-xl py-1 px-3" type="text" id="avatar" placeholder="Профайл зураг" />
+
+                <label class="text-sm font-bold text-sm" for="password">Нууц үг</label>
+                <input class="border focus:outline-none my-2  w-full border-gray-400 rounded-xl py-1 px-3" type="password" id="password" placeholder="Password" />
+                <label class="font-bold text-sm" for="password--confirm">Нууц үг давтах</label>
+                <input class="border focus:outline-none my-2  w-full border-gray-400 rounded-xl py-1 px-3" type="password" id="password--confirm" placeholder="Password confirm" />
+                <button id="btn" class="bg-green-400 text-white w-full my-1 py-1 px-3 rounded-xl focus:bg-green-700" type="submit">Бүртгэх</button>
+                <button id = "back_btn"class="bg-green-400 text-white w-full my-2 py-1 px-3 rounded-xl focus:bg-green-700">Буцах</button>              
+            </form>
+            <div class="w-3/5 lg:w-1/5 text-sm">
+                <p class="check">Жижиг үсэг орсон байх ёстой.</p>
+                <p class="check">Том үсэг орсон байх ёстой.</p>
+                <p class="check">Тоо орсон байх ёстой.</p>
+                <p class="check">Тэмдэгт орсон байх ёстой.</p>
+                <p class="check">Хамгийн багадаа 8 тэмдэгт орсон байх ёстой.</p>
+            </div>
+        </div>
+    </main>
+    <script src="./js/signup.js"></script>
+</body>
+</html>
